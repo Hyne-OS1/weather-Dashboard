@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var cityLocation = () => {
         var cityName = enterCity.value.trim();
         if (!cityName) return;
-        var geocodingUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${APIKey}`;
+        var geocodingUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${APIKey}`;
 
     // API city code response using longitude latitude and city name 
         fetch(geocodingUrl)
