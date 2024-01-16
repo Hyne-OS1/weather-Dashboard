@@ -20,7 +20,7 @@ var newWeatherCard = (weatherCondition) => {
 
 
 var weatherinfo = (cityName, lat, lon) => {
-    var weatherApi = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIKey}`;
+    var weatherApi = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${APIKey}`;
 
     //fetch weather api command + five day forecast console log filter
     fetch(weatherApi)
